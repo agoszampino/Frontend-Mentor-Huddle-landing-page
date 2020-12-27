@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./img/bg-desktop.svg), hsl(257, 40%, 49%);
+    object-fit: cover;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    height: 70px;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+header img {
+    height: 50px;
+}
+
+.landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.picture {
+    width: 45%;
+}
+
+.textContent {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 50px;
+    top: 0;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+button {
+    color: hsl(257, 40%, 49%);
+    background: #ffffff;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    width: 200px;
+    padding: 15px;  
+    margin-top: 15px;
+}
+
+button:hover {
+    background: hsl(300, 69%, 71%);
+    color: #ffffff;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.socialMedia i {
+    margin-right: 20px;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #ffffff;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+}
+
+.socialMedia i:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+}
+
+
+footer .attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+footer .attribution a { 
+    color: hsl(300, 69%, 71%); 
+}
+
+/* MEDIA QUERY */ 
+
+@media screen and (max-width: 375px) {
+    body {
+        background: url(./img/bg-mobile.svg), hsl(257, 40%, 49%);
+        object-fit: cover;
+    }    
+    header {
+        margin-left: 30px;
+    }
+    header img {
+        height: 30px;    
+    }
+    .landing {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .picture img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: auto;
+        margin-top: -30px;
+    }
+    .textContent {
+        width: 100%;
+        text-align: center;
+    }
+    .title {
+        font-size: 30px;    
+    }
+    .text {
+        font-size: 16px;
+        margin: auto 10px;
+    }
+    button {
+        margin: auto;
+        margin-top: 10px;
+        align-items: center;
+
+    }
+    .socialMedia {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+    }
+    footer {
+        margin-top: 10px;
+    }
+}
